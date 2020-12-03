@@ -1,0 +1,32 @@
+{
+    "name": "default theme",
+    "version": 0.1,
+    "components": {
+        "layouts": [
+            {
+                "name": "flexBox",
+                "version": 0.1,
+                "properties": {
+                    "sizes": {
+                        "name": "sizes",
+                        "fields": {
+                            "width": {
+                                "default": 0,
+                                "unit": "px",
+                                "type": "number"
+                            },
+                            "height": {
+                                "default": 0,
+                                "unit": "px",
+                                "type": "number"
+                            }
+                        }
+                    }
+                },
+                "events": {
+                    "click": "layouts.grid.onclick"
+                }
+            }
+        ]
+    }
+}

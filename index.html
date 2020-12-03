@@ -11,7 +11,7 @@
 </head>
 <style>
     html {
-        overflow: hidden;
+        overflow: hidden !important;
     }
 
 
@@ -27,6 +27,79 @@
         padding: 0px;
         height: 38px;
         background-color: #1c1d22;
+    }
+
+    .navbar .left-nav {
+        float: left;
+        width: 30%;
+        padding-left: 12px;
+        justify-items: left;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        align-content: center;
+        text-align: center;
+        flex-wrap: nowrap;
+        height: 100%;
+        padding-top: 4px;
+        display: -webkit-flex;
+    }
+
+    .navbar .fa {
+        font-size: 20px;
+    }
+
+    .navbar .nav-option-icon:hover {
+        background-color: white;
+        color: #222227;
+    }
+
+    .navbar .nav-option-icon.active {
+        background-color: #1e1e22;
+    }
+
+    .navbar .nav-option-icon {
+        border-radius: 2.5px;
+        color: gainsboro;
+        text-align: center;
+        font-size: 16px;
+        margin: 0px;
+        height: 100%;
+        width: 38px;
+        cursor: pointer;
+        text-align: center;
+        padding: 4px;
+        justify-content: center;
+        border-left: 1px solid black;
+        display: -webkit-flex;
+
+
+    }
+
+    .navbar .center-nav {
+        width: 40%;
+        float: left;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        display: -webkit-flex;
+
+
+
+    }
+
+    .navbar .right-nav {
+        display: flex;
+        float: left;
+        width: 30%;
+        justify-items: start;
+        flex-wrap: nowrap;
+        display: -webkit-flex;
+
     }
 
     .sidebar {
@@ -169,8 +242,18 @@
         color: #1c1d22;
     }
 
+    /*
     .component-item:hover {
-        padding: 2px;
+        background-color: white;
+    }
+    .component-item:hover .component-item-name {
+        color: #1c1d22;
+
+    }
+*/
+
+    .component-item-name {
+        font-weight: bold;
     }
 
     .treeview-item.collapsed .treeview-item-content {
@@ -180,7 +263,32 @@
 
 <body>
     <div class="navbar">
+        <div class="left-nav nav-menu">
+            <h3>Front Master</h3>
+        </div>
+        <div class="center-nav nav-menu">
+            <div class="nav-option-icon">
+                <span class="fa fa-tablet"></span>
+            </div>
+            <div class="nav-option-icon active">
+                <span class="fa fa-desktop"></span>
+            </div>
+            <div class="nav-option-icon">
+                <span class="fa fa-tv"></span>
+            </div>
 
+        </div>
+        <div class="right-nav nav-menu">
+            <div class="nav-option-icon">
+                <span class="fa fa-tablet"></span>
+            </div>
+            <div class="nav-option-icon active">
+                <span class="fa fa-desktop"></span>
+            </div>
+            <div class="nav-option-icon">
+                <span class="fa fa-tv"></span>
+            </div>
+        </div>
     </div>
     <div class="sidebar">
         <div class="sidebar-navigation">
@@ -208,14 +316,14 @@
         </div>
         <div class="sidebar-toggle">
             <div id="components-toggle" class="sidebar-toggle-menu">
-                <div id="grids-components-category" class="components-category treeview-item ">
+                <div class="components-category treeview-item ">
                     <div class="components-category-header treeview-item-header">
                         <p>Layouts</p>
                     </div>
                     <div class="components-category-items treeview-item-content">
                         <div class="component-item">
                             <div class="component-item-thumb">
-                                <span class="fa fa-plug"></span>
+                                <span class="fa fa-columns"></span>
                             </div>
                             <a class="component-item-name">Columns</a>
                         </div>
@@ -245,7 +353,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="media-components-category " class="components-category treeview-item ">
+                <div class="components-category treeview-item ">
                     <div class="components-category-header treeview-item-header">
                         <p>Media</p>
                     </div>
@@ -256,7 +364,53 @@
                             </div>
                             <a class="component-item-name">Video</a>
                         </div>
+                        <div class="component-item">
+                            <div class="component-item-thumb">
+                                <span class="fa fa-map"></span>
+                            </div>
+                            <a class="component-item-name">Map</a>
+                        </div>
                     </div>
+                </div>
+                <div class="components-category treeview-item ">
+                    <div class="components-category-header treeview-item-header">
+                        <p>Controllers</p>
+                    </div>
+                    <div class="components-category-items treeview-item-content">
+                        <div class="component-item">
+                            <div class="component-item-thumb">
+                                <span class="fa fa-plug"></span>
+                            </div>
+                            <a class="component-item-name">Button</a>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-item-thumb">
+                                <span class="fa fa-plug"></span>
+                            </div>
+                            <a class="component-item-name">Input</a>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-item-thumb">
+                                <span class="fa fa-plug"></span>
+                            </div>
+                            <a class="component-item-name">Text Area</a>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-item-thumb">
+                                <span class="fa fa-plug"></span>
+                            </div>
+                            <a class="component-item-name">File Input</a>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-item-thumb">
+                                <span class="fa fa-plug"></span>
+                            </div>
+                            <a class="component-item-name">Date time</a>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
             <div id="databases-toggle" class="hidden sidebar-toggle-menu">

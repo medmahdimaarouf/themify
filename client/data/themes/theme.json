@@ -1,0 +1,72 @@
+{
+    "name": "defaulttheme",
+    "version": "0.1",
+    "author": "",
+    "widgets": [
+        {
+            "name": "Layouts",
+            "components": [
+                {
+                    "name": "flexBox",
+                    "class": "flex",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg",
+                    "properties": {
+                        "sizes": {
+                            "name": "sizes",
+                            "fields": {
+                                "width": {
+                                    "default": 0,
+                                    "unit": "px",
+                                    "type": "number"
+                                },
+                                "height": {
+                                    "default": 0,
+                                    "unit": "px",
+                                    "type": "number"
+                                }
+                            }
+                        }
+                    },
+                    "data": {},
+                    "events": {
+                        "click": "layouts.grid.onclick"
+                    }
+                }
+            ]
+        }
+    ],
+    "colors": [
+        {
+            "name": "example color",
+            "code": 111111,
+            "selector": "color"
+        }
+    ],
+    "fonts": [
+        {
+            "name": "icon ex",
+            "selector": "ico-ex"
+        }
+    ],
+    "assets": {
+        "images": [
+            "assets/images/thumb1.jpeg"
+        ],
+        "videos": [
+            "assets/videos/thumbv.mp4"
+        ],
+        "others": [
+            "assets/data/exampels.json"
+        ]
+    },
+    "src": {
+        "styles": [
+            "src/styles/main.css"
+        ],
+        "scripts": [
+            "src/scripts/main.js"
+        ]
+    },
+    "dependencies": []
+}

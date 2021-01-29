@@ -1,0 +1,26 @@
+{
+  "name": "themify",
+  "version": "1.0.0",
+  "description": "Web design project application",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahdiMaarouf2016/themify.git"
+  },
+  "keywords": [
+    "web-design"
+  ],
+  "author": "Med Mahdi Maarouf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MahdiMaarouf2016/themify/issues"
+  },
+  "homepage": "https://github.com/MahdiMaarouf2016/themify#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}

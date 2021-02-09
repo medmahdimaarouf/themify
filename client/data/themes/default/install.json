@@ -1,0 +1,263 @@
+{
+    "name": "defaulttheme",
+    "version": "0.1",
+    "author": "",
+    "categories": [
+        {
+            "name": "Layouts",
+            "components": [
+                {
+                    "name": "Navigation",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Section",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Article",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Aside",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Header",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Footer",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Table",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "List",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Division",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                }
+            ]
+        },
+        {
+            "name": "Controllers",
+            "components": [
+                {
+                    "name": "Form",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Button",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Radiobox",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Checkbox",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Input",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Drop down",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Text Area",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                }
+            ]
+        },
+        {
+            "name": "Media",
+            "components": [
+                {
+                    "name": "Image",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Video",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Audio",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                }
+            ]
+        },
+        {
+            "name": "Textes",
+            "components": [
+                {
+                    "name": "Header1",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Header2",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Header3",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Header4",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Header5",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Paragraph",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Span",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Label",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Link",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                }
+            ]
+        },
+        {
+            "name": "Others",
+            "components": [
+                {
+                    "name": "Canva",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "SVG",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Iframe",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Separator",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                },
+                {
+                    "name": "Object",
+                    "class": "",
+                    "version": 0.1,
+                    "thumb": "../icons/gird.svg"
+                }
+            ]
+        }
+    ],
+    "colors": [
+        {
+            "name": "example color",
+            "code": 111111,
+            "selector": "color"
+        }
+    ],
+    "fonts": [
+        {
+            "name": "icon ex",
+            "selector": "ico-ex"
+        }
+    ],
+    "assets": {
+        "images": [
+            "assets/images/thumb1.jpeg"
+        ],
+        "videos": [
+            "assets/videos/thumbv.mp4"
+        ],
+        "others": [
+            "assets/data/exampels.json"
+        ]
+    },
+    "src": {
+        "styles": [
+            "boostrap/css/boostrap.min.css"
+        ],
+        "scripts": [
+            "boostrap/css/boostrap.min.js"
+        ]
+    },
+    "dependencies": []
+}

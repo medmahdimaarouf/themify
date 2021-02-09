@@ -1,0 +1,357 @@
+{
+    "globals": {
+        "sizes": [
+            {
+                "name": "Pixel",
+                "key": "px"
+            },
+            {
+                "name": "em",
+                "key": "em"
+            },
+            {
+                "name": "Pourcent",
+                "key": "%"
+            }
+        ]
+    },
+    "interceptors": [
+        {
+            "name": "Background",
+            "properties": [
+                {
+                    "name": "Color",
+                    "key": "background-color",
+                    "input": "@colors"
+                },
+                {
+                    "name": "Image",
+                    "key": "background-image",
+                    "input": "@assets:images"
+                },
+                {
+                    "name": "Background repeat",
+                    "key": "background-repeat",
+                    "input": {
+                        "type": "dropdown",
+                        "items": [
+                            {
+                                "name": "Repeat",
+                                "key": "repeat"
+                            },
+                            {
+                                "name": "Repeat-x",
+                                "key": "repeat-x"
+                            },
+                            {
+                                "name": "Repeat-y",
+                                "key": "repeat-y"
+                            },
+                            {
+                                "name": "No-repeat",
+                                "key": "no-repeat"
+                            },
+                            {
+                                "name": "Initial",
+                                "key": "initial"
+                            },
+                            {
+                                "name": "Inherit",
+                                "key": "inherit"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Attachment",
+                    "key": "background-attachment",
+                    "input": {
+                        "type": "dropdown",
+                        "items": [
+                            {
+                                "name": "Scroll",
+                                "key": "scroll"
+                            },
+                            {
+                                "name": "Fixed",
+                                "key": "fixed"
+                            },
+                            {
+                                "name": "Local",
+                                "key": "local"
+                            },
+                            {
+                                "name": "Initial",
+                                "key": "initial"
+                            },
+                            {
+                                "name": "Inherit",
+                                "key": "inherit"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Position",
+                    "key": "background-position",
+                    "input": {
+                        "type": "dropdown",
+                        "items": [
+                            {
+                                "name": "left top",
+                                "key": "left top"
+                            },
+                            {
+                                "name": "left center",
+                                "key": "left center"
+                            },
+                            {
+                                "name": "left bottom",
+                                "key": "left bottom"
+                            },
+                            {
+                                "name": "right top",
+                                "key": "right top"
+                            },
+                            {
+                                "name": "right center",
+                                "key": "right center"
+                            },
+                            {
+                                "name": "right bottom",
+                                "key": "right bottom"
+                            },
+                            {
+                                "name": "center top",
+                                "key": "center top"
+                            },
+                            {
+                                "name": "center center",
+                                "key": "center center"
+                            },
+                            {
+                                "name": "center bottom",
+                                "key": "center bottom"
+                            },
+                            {
+                                "name": "Initial",
+                                "key": "initial"
+                            },
+                            {
+                                "name": "Inherit",
+                                "key": "inherit"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Text",
+            "properties": [
+                {
+                    "name": "Align",
+                    "key": "text-align",
+                    "input": {
+                        "type": "dropdown",
+                        "items": [
+                            {
+                                "name": "left",
+                                "key": "left"
+                            },
+                            {
+                                "name": "center",
+                                "key": "center"
+                            },
+                            {
+                                "name": "right",
+                                "key": "right"
+                            },
+                            {
+                                "name": "justify",
+                                "key": "justify"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Decoration",
+                    "key": "text-decoration",
+                    "input": {
+                        "type": "dropdown",
+                        "items": [
+                            {
+                                "name": "overline",
+                                "key": "overline"
+                            },
+                            {
+                                "name": "line-through",
+                                "key": "line-through"
+                            },
+                            {
+                                "name": "underline",
+                                "key": "underline"
+                            },
+                            {
+                                "name": "None",
+                                "key": "none"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Transform",
+                    "key": "text-transform",
+                    "input": {
+                        "type": "dropdown",
+                        "items": [
+                            {
+                                "name": "uppercase",
+                                "key": "uppercase"
+                            },
+                            {
+                                "name": "lowercase",
+                                "key": "lowercase"
+                            },
+                            {
+                                "name": "capitalize",
+                                "key": "capitalize"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Indent",
+                    "key": "text-indent",
+                    "default": 0,
+                    "input": {
+                        "type": "decimal",
+                        "unities": "@sizes"
+                    }
+                },
+                {
+                    "name": "letter-spacing",
+                    "key": "letter-spacing",
+                    "default": 0,
+                    "input": {
+                        "type": "decimal",
+                        "unities": "@sizes"
+                    }
+                },
+                {
+                    "name": "line-height",
+                    "key": "line-height",
+                    "default": 0,
+                    "input": {
+                        "type": "decimal"
+                    }
+                },
+                {
+                    "name": "direction",
+                    "key": "direction",
+                    "input": {
+                        "type": "dropdown",
+                        "items": [
+                            {
+                                "name": "rtl"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "word-spacing",
+                    "key": "word-spacing",
+                    "default": 0,
+                    "input": {
+                        "type": "decimal",
+                        "unities": "@sizes"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Font",
+            "properties": [
+                {
+                    "name": "Family",
+                    "key": "font-family",
+                    "input": {
+                        "type": "dropdown",
+                        "default": 0,
+                        "items": [
+                            {
+                                "name": "Serif",
+                                "key": "serif"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Style",
+                    "key": "font-style",
+                    "input": {
+                        "type": "dropdown",
+                        "default": 0,
+                        "items": [
+                            {
+                                "name": "normal ",
+                                "key": "normal "
+                            },
+                            {
+                                "name": "italic",
+                                "key": "italic"
+                            },
+                            {
+                                "name": "oblique ",
+                                "key": "oblique "
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Size",
+                    "key": "font-size",
+                    "default": 0,
+                    "input": {
+                        "type": "decimal",
+                        "unities": "@sizes"
+                    }
+                },
+                {
+                    "name": "Weight",
+                    "key": "font-weight",
+                    "input": {
+                        "type": "dropdown",
+                        "items": [
+                            {
+                                "name": "normal",
+                                "key": "normal"
+                            },
+                            {
+                                "name": "bold",
+                                "key": "bold"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Variant",
+                    "key": "font-variant",
+                    "input": {
+                        "type": "dropdown",
+                        "items": [
+                            {
+                                "name": "normal",
+                                "key": "normal"
+                            },
+                            {
+                                "name": "small-caps",
+                                "key": "small-caps"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

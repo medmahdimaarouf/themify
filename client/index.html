@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Themify-dahsbord</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="left-nav nav-menu">
+            <h3>Themify</h3>
+        </div>
+        <div class="center-nav nav-menu">
+            <div class="nav-option-icon">
+                <span class="fa fa-tablet"></span>
+            </div>
+            <div class="nav-option-icon active">
+                <span class="fa fa-desktop"></span>
+            </div>
+            <div class="nav-option-icon">
+                <span class="fa fa-tv"></span>
+            </div>
+
+        </div>
+        <div class="right-nav nav-menu">
+            <div class="nav-option-icon">
+                <span class="fa fa-upload"></span>
+            </div>
+            <div class="nav-option-icon">
+                <span class="fa fa-save"></span>
+            </div>
+            <div class="nav-option-icon">
+                <span class="fa fa-code-fork"></span>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-navigation">
+            <div class="sidebar-navigation-menu">
+                <span class="fa fa-home"></span>
+            </div>
+            <div class="sidebar-navigation-menu active" onclick="toggleSidebar(event)">
+                <span class="fa fa-plus-circle"></span>
+            </div>
+            <div class="sidebar-navigation-menu disabled">
+                <span class="fa fa-database"></span>
+            </div>
+            <div class="sidebar-navigation-menu disabled">
+                <span class="fa fa-picture-o"></span>
+            </div>
+            <div class="sidebar-navigation-menu disabled">
+                <span class="fa fa-copy"></span>
+            </div>
+            <div class="sidebar-navigation-menu disabled">
+                <span class="fa fa-code"></span>
+            </div>
+            <div class="sidebar-navigation-menu">
+                <span class="fa fa-columns"></span>
+            </div>
+        </div>
+        <div class="sidebar-toggle">
+            <div id="components-toggle" class="sidebar-toggle-menu">
+
+            </div>
+            <div id="databases-toggle" class="hidden sidebar-toggle-menu">
+                <h3>databases-toggle</h3>
+            </div>
+        </div>
+
+    </div>
+    <div class="main">
+        <iframe src="./data/web/index.html" class="papper"></iframe>
+    </div>
+    <div class="props">
+        <div class="props-category-items">
+            <div class="prop-category treeview-item">
+                <div class="prop-category-header treeview-item-header">
+                    <a>Identification</a>
+                </div>
+                <div class="prop-category-content treeview-item-content">
+                    <!-- <div class="prop-item">
+                        <label>
+                            Id
+                        </label>
+                        <input type="text" value="">
+                    </div>-->
+                    <div class="prop-item">
+                        <label>
+                            Class
+                        </label>
+                        <input type="text" value="">
+                    </div>
+                    <div class="prop-item">
+                        <label>
+                            Include theme name
+                        </label>
+                        <input type="checkbox" checked="true">
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="prop-category treeview-item">
+                <div class="prop-category-header treeview-item-header">
+                    <a>Sizes</a>
+                </div>
+                <div class="prop-category-content treeview-item-content">
+                    <div class="prop-item">
+                        <label>
+                            Width
+                        </label>
+                        <input type="text" value="Text">
+                    </div>
+                    <div class="prop-item">
+                        <label>
+                            Height
+                        </label>
+                        <input type="number" value="Text">
+                    </div>
+                    <div class="prop-item">
+                        <label>
+                            Use ?
+                        </label>
+                        <input type="checkbox" value="Text">
+                    </div>
+                </div>
+            </div>
+            <div class="prop-category treeview-item">
+                <div class="prop-category-header treeview-item-header">
+                    <a>Typography</a>
+                </div>
+                <div class="prop-category-content treeview-item-content">
+                    <div class="prop-item">
+                        <label>
+                            Longeur
+                        </label>
+                        <div class="selectunit">
+                            <input type="number">
+                            <select>
+                                <option value="px">px</option>
+                                <option value="pm">em</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        -->
+        </div>
+
+    </div>
+    <script src="vendors/jquery/jquery-3.4.1.min.js">
+    </script>
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+
+</html>

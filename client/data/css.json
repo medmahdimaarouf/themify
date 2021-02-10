@@ -17,17 +17,173 @@
     },
     "interceptors": [
         {
+            "name": "Sizes",
+            "docs": {
+                "link": "https://wwww.w3schools.com/css/css_dimension.html",
+                "description": "The CSS dimension properties allow you to control the height and width of an element.\nNote: The height and width properties do not include padding, borders, or margins; they set the height/width of the area inside the padding, border, and margin of the element!"
+            },
+            "properties": [
+                {
+                    "name": "width",
+                    "key": "width",
+                    "docs": {
+                        "link": "https://wwww.w3schools.com/css/css_dimension.html",
+                        "description": "The width property are used to set the width of an element."
+                    },
+                    "input": {
+                        "type": "decimal",
+                        "default": 0,
+                        "unities": "@sizes"
+                    }
+                },
+                {
+                    "name": "Height",
+                    "key": "height",
+                    "docs": {
+                        "link": "https://www.w3schools.com/css/css_dimension.html",
+                        "description": "The height property are used to set the height of an element."
+                    },
+                    "input": {
+                        "type": "decimal",
+                        "default": 0,
+                        "unities": "@sizes"
+                    }
+                },
+                {
+                    "name": "Min width",
+                    "key": "min-width",
+                    "docs": {
+                        "link": "",
+                        "description": "The min-width property is used to set the minimum width of an element."
+                    },
+                    "input": {
+                        "type": "decimal",
+                        "default": 0,
+                        "unities": "@sizes"
+                    }
+                },
+                {
+                    "name": "Min height",
+                    "key": "min-height",
+                    "docs": {
+                        "link": "",
+                        "description": "The min-height property is used to set the minimum height of an element."
+                    },
+                    "input": {
+                        "type": "decimal",
+                        "default": 0,
+                        "unities": "@sizes"
+                    }
+                },
+                {
+                    "name": "Max width",
+                    "key": "max-width",
+                    "docs": {
+                        "link": "",
+                        "description": "The max-width property is used to set the maximum width of an element."
+                    },
+                    "input": {
+                        "type": "decimal",
+                        "default": 0,
+                        "unities": "@sizes"
+                    }
+                },
+                {
+                    "name": "Max height",
+                    "key": "max-height",
+                    "docs": {
+                        "link": "",
+                        "description": "The max-height property is used to set the maximum height of an element."
+                    },
+                    "input": {
+                        "type": "decimal",
+                        "default": 0,
+                        "unities": "@sizes"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Spacing",
+            "properties": [
+                {
+                    "name": "margin",
+                    "key": "margin",
+                    "docs": {
+                        "link": "",
+                        "description": "The CSS margin properties set the size of the white space OUTSIDE the border."
+                    },
+                    "individuals": [
+                        {
+                            "name": "Top",
+                            "key": "margin-top"
+                        },
+                        {
+                            "name": "Right",
+                            "key": "margin-right"
+                        },
+                        {
+                            "name": "Bottom",
+                            "key": "margin-bottom"
+                        },
+                        {
+                            "name": "Left",
+                            "key": "margin-left"
+                        }
+                    ],
+                    "input": {
+                        "type": "decimal",
+                        "unities": "@sizes"
+                    }
+                },
+                {
+                    "name": "Padding",
+                    "key": "padding",
+                    "docs": {
+                        "link": "",
+                        "description": "The CSS padding properties define the white space between the element content and the element border.\nThe padding clears an area around the content (inside the border) of an element."
+                    },
+                    "individuals": [
+                        {
+                            "name": "Top",
+                            "key": "padding-top"
+                        },
+                        {
+                            "name": "Right",
+                            "key": "padding-right"
+                        },
+                        {
+                            "name": "Bottom",
+                            "key": "padding-bottom"
+                        },
+                        {
+                            "name": "Left",
+                            "key": "padding-left"
+                        }
+                    ],
+                    "input": {
+                        "type": "decimal",
+                        "unities": "@sizes"
+                    }
+                }
+            ]
+        },
+        {
             "name": "Background",
             "properties": [
                 {
                     "name": "Color",
                     "key": "background-color",
-                    "input": "@colors"
+                    "input": {
+                        "type": "color"
+                    }
                 },
                 {
                     "name": "Image",
                     "key": "background-image",
-                    "input": "@assets:images"
+                    "input": {
+                        "type": "file"
+                    }
                 },
                 {
                     "name": "Background repeat",
@@ -142,6 +298,142 @@
                                 "key": "inherit"
                             }
                         ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Borders",
+            "docs": {
+                "link": "",
+                "description": "The CSS border properties allow you to specify the style, width, and color of an element's border.\nThis element has a groove border that is 15px wide and green."
+            },
+            "properties": [
+                {
+                    "name": "Style",
+                    "key": "border-style",
+                    "docs": {
+                        "link": "",
+                        "description": "The border-style property specifies what kind of border to display."
+                    },
+                    "individuals": [
+                        {
+                            "name": "top",
+                            "key": "border-top-style"
+                        },
+                        {
+                            "name": "right",
+                            "key": "border-right-style"
+                        },
+                        {
+                            "name": "bottom",
+                            "key": "border-bottom-style"
+                        },
+                        {
+                            "name": "left",
+                            "key": "border-left-style"
+                        }
+                    ],
+                    "input": {
+                        "type": "dropdown",
+                        "default": 0,
+                        "items": [
+                            {
+                                "name": "dotted",
+                                "docs": {
+                                    "link": "",
+                                    "description": "Defines a dotted border"
+                                },
+                                "key": "dotted"
+                            },
+                            {
+                                "name": "dashed",
+                                "key": "dashed",
+                                "desciption": "Defines a dashed border"
+                            },
+                            {
+                                "name": "solid",
+                                "key": "solid",
+                                "desciption": "Defines a solid border"
+                            },
+                            {
+                                "name": "double",
+                                "key": "double",
+                                "desciption": "Defines a double border"
+                            },
+                            {
+                                "name": "groove",
+                                "key": "groove",
+                                "desciption": "Defines a 3D grooved border. The effect depends on the border-color value"
+                            },
+                            {
+                                "name": "ridge",
+                                "key": "ridge",
+                                "desciption": "Defines a 3D ridged border. The effect depends on the border-color value"
+                            },
+                            {
+                                "name": "inset",
+                                "key": "inset",
+                                "desciption": "Defines a 3D inset border. The effect depends on the border-color value"
+                            },
+                            {
+                                "name": "outset",
+                                "key": "outset",
+                                "desciption": "Defines a 3D outset border. The effect depends on the border-color value"
+                            },
+                            {
+                                "name": "none",
+                                "key": "none",
+                                "desciption": "Defines no border"
+                            },
+                            {
+                                "name": "hidden",
+                                "key": "hidden",
+                                "desciption": "Defines a hidden border"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "width",
+                    "key": "width",
+                    "docs": {
+                        "link": "",
+                        "description": "The border-width property specifies the width of the four borders."
+                    },
+                    "input": {
+                        "unities": "@sizes",
+                        "default": 0,
+                        "type": "decimal"
+                    }
+                },
+                {
+                    "name": "Color",
+                    "key": "border-color",
+                    "docs": {
+                        "link": "",
+                        "description": "The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border).\nIf border-color is not set, it inherits the color of the element."
+                    },
+                    "individuals": [
+                        {
+                            "name": "top",
+                            "key": "border-top-color"
+                        },
+                        {
+                            "name": "right",
+                            "key": "border-right-color"
+                        },
+                        {
+                            "name": "bottom",
+                            "key": "border-bottom-color"
+                        },
+                        {
+                            "name": "left",
+                            "key": "border-left-color"
+                        }
+                    ],
+                    "input": {
+                        "type": "color"
                     }
                 }
             ]

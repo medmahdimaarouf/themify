@@ -43,7 +43,12 @@ function loadCssInterceptors(cssInterceptors) {
         interception_elm.append(properties_root)
         interception.properties.forEach(property => {
             var property_elm = $('<div class="prop-item"></div>').append($('<label>' + property.name + '</label>'))
-
+            console.log(property.description)
+            if (property.docs) {
+                property_elm.addClass("tooltip");
+                property_elm.append($('<div class="tooltiptext"></div>').append($('<span>' + property.docs.description + '</span>'), $('<a href="' + property.docs.link + '" >doc</a>')))
+            }
+            console.log(property.input.type)
             if (property.input.type === "dropdown") {
                 var property_input_elm = $('<select></select>');
                 property.input.items.forEach(item => {
@@ -55,6 +60,13 @@ function loadCssInterceptors(cssInterceptors) {
                     var property_input_elm = $('<div class="selectunit"><input type="number" value="' + property.default + '"><select><option value="px">px</option><option value="pm">em</option></select></div>');
                     property_elm.append(property_input_elm)
                     //property_elm.append($('<select class="input-unit"><option value="px">px</option><option value="pm">em</option></select>'))
+                }
+                else if (property.input.type === "color") {
+                    var property_input_elm = $('<div class="selectunit"><input type="color" value="' + property.default + '"></div>');
+                    property_elm.append(property_input_elm)
+                } else if (property.input.type === "file") {
+                    var property_input_elm = $('<div class="selectunit"><input type="file" value="' + property.default + '"></div>');
+                    property_elm.append(property_input_elm)
                 }
             properties_root.append(property_elm)
         })

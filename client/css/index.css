@@ -70,6 +70,8 @@ html {
 .navbar .nav-option-icon:hover {
     background-color: white;
     color: #222227;
+    font-size: 22px;
+    margin-top: 0px;
 }
 
 .navbar .nav-option-icon.active {

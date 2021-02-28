@@ -57,15 +57,16 @@ function loadCssInterceptors(cssInterceptors) {
                 property_elm.append(property_input_elm)
             } else
                 if (property.input.type === "decimal") {
-                    var property_input_elm = $('<div class="selectunit"><input type="number" value="' + property.default + '"><select><option value="px">px</option><option value="pm">em</option></select></div>');
+                    console.log("tesssssssssssssssssss : ", property.input.unities)
+                    var property_input_elm = $('<div class="selectunit"><input type="number" value="' + property.input.default + '"><select><option value="px">px</option><option value="pm">em</option><option value="%">%</option></select></div>');
                     property_elm.append(property_input_elm)
                     //property_elm.append($('<select class="input-unit"><option value="px">px</option><option value="pm">em</option></select>'))
                 }
                 else if (property.input.type === "color") {
-                    var property_input_elm = $('<div class="selectunit"><input type="color" value="' + property.default + '"></div>');
+                    var property_input_elm = $('<div class="selectunit"><input type="color" value="' + property.input.default + '"></div>');
                     property_elm.append(property_input_elm)
                 } else if (property.input.type === "file") {
-                    var property_input_elm = $('<div class="selectunit"><input type="file" value="' + property.default + '"></div>');
+                    var property_input_elm = $('<div class="selectunit"><input type="file" value="' + property.input.default + '"></div>');
                     property_elm.append(property_input_elm)
                 }
             properties_root.append(property_elm)

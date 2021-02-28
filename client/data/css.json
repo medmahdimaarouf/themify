@@ -1,5 +1,6 @@
 {
     "globals": {
+        "defaults": [],
         "sizes": [
             {
                 "name": "Pixel",
@@ -639,6 +640,112 @@
                             {
                                 "name": "small-caps",
                                 "key": "small-caps"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Layout",
+            "properties": [
+                {
+                    "name": "float",
+                    "key": "float",
+                    "input": {
+                        "type": "dropdown",
+                        "default": 0,
+                        "items": [
+                            {
+                                "name": "static",
+                                "key": "static"
+                            },
+                            {
+                                "name": "relative",
+                                "key": "relative"
+                            },
+                            {
+                                "name": "fixed",
+                                "key": "fixed"
+                            },
+                            {
+                                "name": "absolute",
+                                "key": "absolute"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Top",
+                    "key": "top",
+                    "input": {
+                        "type": "decimal",
+                        "default": 0,
+                        "unities": "@sizes"
+                    }
+                },
+                {
+                    "name": "Left",
+                    "key": "left",
+                    "input": {
+                        "type": "decimal",
+                        "default": 0,
+                        "unities": "@sizes"
+                    }
+                },
+                {
+                    "name": "Right",
+                    "key": "right",
+                    "input": {
+                        "type": "decimal",
+                        "default": 0,
+                        "unities": "@sizes"
+                    }
+                },
+                {
+                    "name": "Right",
+                    "key": "right",
+                    "input": {
+                        "type": "decimal",
+                        "default": 0,
+                        "unities": "@sizes"
+                    }
+                },
+                {
+                    "name": "Bottom",
+                    "key": "bottom",
+                    "input": {
+                        "type": "decimal",
+                        "default": 0,
+                        "unities": "@sizes"
+                    }
+                },
+                {
+                    "name": "Display",
+                    "key": "display",
+                    "input": {
+                        "type": "dropdown",
+                        "default": 0,
+                        "items": [
+                            {
+                                "key": "none",
+                                "name": "None"
+                            },
+                            {
+                                "key": "inline",
+                                "name": "inline"
+                            },
+                            {
+                                "key": "block",
+                                "name": "block"
+                            },
+                            {
+                                "name": "Flex Box",
+                                "key": "flex"
+                            },
+                            {
+                                "key": "inline-block",
+                                "name": "inline block"
                             }
                         ]
                     }

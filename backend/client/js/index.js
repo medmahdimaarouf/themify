@@ -119,3 +119,11 @@ $('body').ready(() => {
 })
 
 
+function hidesidebar() {
+    //$('.sidebar-toggle').remove();
+    $('.sidebar-toggle').css("display", "none");
+    $('.sidebar-navigation').width("100%")
+    $('.sidebar').width('2.8%')
+    $('.main').width('76.8%')
+    $('.props').width("20.3%")
+}

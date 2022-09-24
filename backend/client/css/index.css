@@ -398,3 +398,21 @@ html {
 input[type="checkbox"] {
     align-self: flex-start;
 }
+
+/*********************/
+
+.hidden-leftbar .sidebar-toggle,
+.hidden-leftbar .sidebar-toggle * {
+    width: 0%;
+    visibility: hidden;
+}
+
+.hidden-leftbar .sidebar {
+    width: 14%;
+}
+
+.hidden-leftbar .sidebar-navigatio {
+    width: 100%;
+}
+
+.hidden-leftbar .main {}

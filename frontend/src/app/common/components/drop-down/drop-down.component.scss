@@ -1,0 +1,46 @@
+.drop-down {
+  background-color: #272626;
+  color: white;
+  position: relative;
+  height: min-content;
+  width: min-content;
+  border-radius: 3px;
+  padding: 2px 4px;
+
+  span {
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+  }
+
+  >div {
+    position: absolute;
+    width: min-content;
+    height: auto;
+    color: white;
+    background-color: #3f3d3d;
+    border-radius: 0px 0px 3px 3px;
+    z-index: 99999;
+    padding: 2px 4px;
+    margin: 0px;
+    margin-left: -4px;
+
+    >div:hover {
+      background-color: #272626;
+      border-radius: 2px;
+    }
+
+    >div {
+      padding: 2px 0px;
+      float: left;
+      width: 100%;
+
+
+      span {
+        text-align: center;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.navbar {
+  border-bottom: 1px solid black;
+  display: -moz-stack;
+  padding: 0px;
+  height: 38px;
+  background-color: #1c1d22;
+}
+
+.navbar .left-nav {
+  float: left;
+  width: 30%;
+  padding-left: 12px;
+  justify-items: left;
+}
+
+.navbar .fa {
+  font-size: 20px;
+}
+
+.navbar .nav-option-icon:hover {
+  background-color: white;
+  color: #222227;
+  font-size: 22px;
+  margin-top: 0px;
+}
+
+.navbar .nav-option-icon.active {
+  background-color: #1e1e22;
+}
+
+.navbar .nav-option-icon {
+  border-radius: 2.5px;
+  color: gainsboro;
+  text-align: center;
+  font-size: 16px;
+  margin: 0px;
+  height: 100%;
+  width: 38px;
+  cursor: pointer;
+  text-align: center;
+  padding: 4px;
+  justify-content: center;
+  border-left: 1px solid black;
+  display: -webkit-flex;
+
+
+}
+
+.navbar .center-nav {
+  width: 40%;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  display: -webkit-flex;
+}
+
+.navbar .right-nav {
+  display: flex;
+  float: left;
+  width: 30%;
+  flex-wrap: nowrap;
+  justify-items: right;
+  justify-content: right;
+  padding-right: 12px;
+  justify-self: right;
+  justify-content: flex-end;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-content: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  height: 100%;
+  padding-top: 4px;
+  display: -webkit-flex;
+}

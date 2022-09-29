@@ -1,0 +1,8 @@
+<div class="drop-down">
+    <span (click)="options_toggled = !options_toggled">{{value}}</span>
+    <div *ngIf="options_toggled" class="drop-down-modal">
+        <div *ngFor="let option of options" class="drop-down-option" (click)="onValueChange(option)">
+            <span>{{option}}</span>
+        </div>
+    </div>
+</div>

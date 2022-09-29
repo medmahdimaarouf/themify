@@ -1,0 +1,109 @@
+.css-length-form {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 26px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: min-content;
+  background-color: #272626;
+  color: white;
+
+  .exact-length {
+    display: flex;
+    flex-wrap: nowrap;
+
+    input::-webkit-inner-spin-button {
+      background-color: #272626;
+      color: #272626;
+    }
+
+    input {
+      outline: none;
+      border: none;
+      width: 56px;
+      padding: 3px;
+      text-align: center;
+
+      ::text {
+        padding-inline: 4px;
+
+      }
+
+      ::-webkit-inner-spin-button {
+        background-color: #272626;
+      }
+
+      ::-webkit-outer-spin-button {
+        background-color: #272626;
+      }
+    }
+
+    .length-units {
+      max-width: min-content;
+      border-radius: 0px;
+      border: none;
+      position: relative;
+      height: auto;
+      cursor: pointer;
+
+      ::text {
+        padding-inline: 0px;
+      }
+
+      option {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .length-options {
+
+    position: absolute;
+    width: auto;
+    height: auto;
+    color: white;
+    border-radius: 0px 0px 3px 3px;
+    z-index: 99999;
+    padding: 2px 4px;
+    margin: 0px;
+    top: 25px;
+    right: -1px;
+
+    >div:hover * {
+      background-color: #272626;
+    }
+
+    >div {
+      padding: 2px;
+      cursor: pointer;
+
+      span {
+        margin: 2px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .optional-value {
+    padding: 3px 6px;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  #switcher {
+    cursor: pointer;
+    padding: 0px 2px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  * {
+    background-color: #272626;
+    color: white;
+  }
+
+
+}

@@ -1,0 +1,33 @@
+<div class="bars">
+    <div
+        *ngIf="hasVerticalBar"
+        class="bar bar_vertical"
+        [class.bar_has-horizontal]="hasHorizontalBar"
+    >
+        <div
+            #vertical
+            class="thumb"
+            [class.thumb_active]="verticalThumbActive"
+            [style.height.%]="verticalSize"
+            [style.top.%]="verticalPosition"
+            (mousedown.prevent)="onVerticalStart($event)"
+            (document:mousemove.silent)="onVerticalMove($event, vertical)"
+        ></div>
+    </div>
+    <div
+        *ngIf="hasHorizontalBar"
+        class="bar bar_horizontal"
+        [class.bar_has-vertical]="hasVerticalBar"
+    >
+        <div
+            #horizontal
+            class="thumb"
+            [class.thumb_active]="horizontalThumbActive"
+            [style.width.%]="horizontalSize"
+            [style.left.%]="horizontalPosition"
+            (mousedown.prevent)="onHorizontalStart($event)"
+            (document:mousemove.silent)="onHorizontalMove($event, horizontal)"
+        ></div>
+    </div>
+</div>
+<div class="content" (waResizeObserver)="onScroll()"><ng-content></ng-content></div>

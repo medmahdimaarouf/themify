@@ -1,0 +1,23 @@
+<div class="css-length-form">
+    <div *ngIf="editMode == 0;else optionalValue" class="exact-length">
+        <input type="number" value="1000">
+        <drop-down [options]="['px','em','vh','wh']" class="length-units"></drop-down>
+    </div>
+    <ng-template #optionalValue>
+        <div class="optional-value">
+            <span>{{option}}</span>
+        </div>
+    </ng-template>
+    <span id="switcher" (click)="_optionModalToggled = !_optionModalToggled">
+        <i class="fa fa-sort-desc"></i>
+    </span>
+    <div *ngIf="_optionModalToggled" class="length-options">
+        <div (click)="!(editMode = 0) && _optionModalToggled = false">
+            <span>Exact length</span>
+        </div>
+        <div *ngFor="let optionItem of options"
+            (click)="(editMode = 1) && (option = optionItem) && _optionModalToggled = false">
+            <span>{{optionItem}}</span>
+        </div>
+    </div>
+</div>

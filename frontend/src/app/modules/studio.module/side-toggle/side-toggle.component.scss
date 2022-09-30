@@ -1,0 +1,167 @@
+.sidebar {
+  display: -webkit-inline-flex;
+  width: 20%;
+  float: left;
+  border-right: 1px solid black;
+}
+
+.sidebar-navigation {
+  overflow: hidden;
+  font-size: 20px;
+  width: 13%;
+  background-color: #1c1d22;
+  min-width: 13%;
+
+}
+
+.sidebar-toggle {
+  background-color: #222227;
+  width: 100%;
+}
+
+.sidebar-navigation-menu {
+  border-radius: 2.5px;
+  color: gainsboro;
+  text-align: center;
+  padding: 4px;
+  margin: 0px;
+  height: 35px;
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.sidebar-navigation-menu:hover {
+  background-color: #222227;
+  color: white;
+}
+
+
+.sidebar-navigation-menu.active {
+  background-color: #222227;
+  border-right: 0px solid black;
+  color: white;
+}
+
+.sidebar-navigation-menu.disabled {
+  color: gray;
+}
+
+.hidden-leftbar .sidebar-toggle,
+.hidden-leftbar .sidebar-toggle * {
+  width: 0%;
+  visibility: hidden;
+}
+
+.hidden-leftbar .sidebar {
+  width: 14%;
+}
+
+.hidden-leftbar .sidebar-navigation {
+  width: 100%;
+}
+
+
+#components-toggle {
+  width: 100%;
+
+  .components-category-items {
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+
+    .components-category {
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+
+      .components-category-header {
+        color: blanchedalmond;
+        background-color: #1c1d22;
+        height: 22px;
+        cursor: pointer;
+        padding-left: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border-bottom: 1px solid black;
+        display: inline;
+        width: 100%;
+      }
+    }
+  }
+
+  .components-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    align-items: start;
+    justify-content: start;
+    justify-items: start;
+    flex-direction: row;
+
+    .component-item {
+      text-align: center;
+      margin: 0px;
+      padding: 0px;
+      background-color: #1c1d22;
+      margin: 6px;
+      border-radius: 2.3px;
+      cursor: pointer;
+      width: 80px;
+      height: 60px;
+
+
+
+      .component-item-thumb {
+        border-radius: 2.2px;
+        border: 1px dotted white;
+        align-content: center;
+        margin: 8px;
+        padding: 6px;
+
+        .component-item-name {
+          color: white;
+          font-size: 12px;
+          font-weight: bold;
+          margin: 0px;
+          padding: 0px;
+          text-align: center;
+          vertical-align: middle;
+        }
+
+        a {
+          font-size: 28px;
+          text-align: center;
+          vertical-align: middle;
+        }
+
+      }
+
+      :hover .component-item-thumb {
+        background-color: white;
+        color: #1c1d22;
+      }
+
+
+    }
+  }
+
+
+
+
+
+
+  /*
+  .component-item:hover {
+      background-color: white;
+  }
+  .component-item:hover .component-item-name {
+      color: #1c1d22;
+  
+  }
+  */
+
+
+}

@@ -37,166 +37,19 @@ html {
 }
 
 
-
-
-
-
-.sidebar {
-  display: -webkit-inline-flex;
-  width: 20%;
-  float: left;
-  border-right: 1px solid black;
-}
-
-
-.sidebar-navigation {
-  overflow: hidden;
-  font-size: 20px;
-  width: 13%;
-  background-color: #1c1d22;
-  min-width: 13%;
-
-}
-
-
-.sidebar-toggle {
-  background-color: #222227;
-  width: 100%;
-  /*overflow: scroll;*/
-}
-
-
-
-
-
-.sidebar-navigation-menu {
-  border-radius: 2.5px;
-  color: gainsboro;
-  text-align: center;
-  padding: 4px;
-  margin: 0px;
-  height: 35px;
-  width: 100%;
-  cursor: pointer;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-
-
-}
-
-.sidebar-navigation-menu:hover {
-  background-color: #222227;
-  color: white;
-}
-
-
-.sidebar-navigation-menu.active {
-  background-color: #222227;
-  border-right: 0px solid black;
-  color: white;
-}
-
 .hidden {
   display: none;
 }
 
-.sidebar-navigation-menu.disabled {
-  color: gray;
-}
 
-.components-category {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
 
-.components-category-header {
-  color: blanchedalmond;
-  background-color: #1c1d22;
-  height: 22px;
-  cursor: pointer;
-  padding-left: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  border-bottom: 1px solid black;
-  display: inline;
-  width: 100%;
-}
-
-.component-item-thumb {
-  border-radius: 2.2px;
-  border: 1px dotted white;
-  align-content: center;
-  margin: 8px;
-  padding: 6px;
-
-}
-
-.components-category-items {
-  display: flex;
-  color: white;
-  flex-wrap: wrap;
-}
-
-.component-item-name {
-  color: white;
-  font-size: 12px;
-  margin: 0px;
-  padding: 0px;
-
-}
-
-.component-item {
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-  background-color: #1c1d22;
-  margin: 6px;
-  border-radius: 2.3px;
-  cursor: pointer;
-}
-
-.component-item:hover .component-item-thumb {
-  background-color: white;
-  color: #1c1d22;
-}
-
-/*
-.component-item:hover {
-    background-color: white;
-}
-.component-item:hover .component-item-name {
-    color: #1c1d22;
-
-}
-*/
-
-.component-item-name {
-  font-weight: bold;
-}
 
 .treeview-item.collapsed .treeview-item-content {
   display: none;
 }
-
-
 
 input[type="checkbox"] {
   align-self: flex-start;
 }
 
 /*********************/
-
-.hidden-leftbar .sidebar-toggle,
-.hidden-leftbar .sidebar-toggle * {
-  width: 0%;
-  visibility: hidden;
-}
-
-.hidden-leftbar .sidebar {
-  width: 14%;
-}
-
-.hidden-leftbar .sidebar-navigatio {
-  width: 100%;
-}

@@ -1,5 +1,5 @@
 .props {
-  display: -webkit-inline-flex;
+  display: inline-flex;
   background-color: #1c1d22;
   width: 20%;
   float: left;
@@ -17,6 +17,7 @@
 .props-category-items {
   width: 100%;
   display: flex;
+  height: auto;
   flex-direction: column;
   color: white;
   flex-wrap: nowrap;

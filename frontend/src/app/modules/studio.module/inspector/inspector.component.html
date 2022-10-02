@@ -1,168 +1,728 @@
 <div class="props">
-    <scrollbar>
+    <scrollbar style="width: 100%;height: auto;">
         <div class="props-category-items">
-            <div class="prop-category treeview-item">
-                <div class="prop-category-header treeview-item-header">
-                    <a>Identification</a>
-                </div>
-                <div class="prop-category-content treeview-item-content">
-                    <div class="prop-item">
-                        <label>
-                            Class
-                        </label>
-                        <input type="text" value="">
+            <accordion>
+                <div class="prop-category treeview-item">
+                    <div class="prop-category-header treeview-item-header" #Header>
+                        <a>Identification</a>
                     </div>
-                    <div class="prop-item">
-                        <label>
-                            Include theme name
-                        </label>
-                        <input type="checkbox" checked="true">
+                    <div class="prop-category-content treeview-item-content" #Content>
+                        <div class="prop-item">
+                            <label>
+                                Class
+                            </label>
+                            <input type="text" value="">
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Include theme name
+                            </label>
+                            <input type="checkbox" checked="true">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="prop-category treeview-item">
-                <div class="prop-category-header treeview-item-header">
-                    <a>Sizes</a>
-                </div>
-                <div class="prop-category-content treeview-item-content">
-                    <div class="prop-item">
-                        <label>
-                            Width
-                        </label>
-                        <app-css-length-form style="width: 120px;"></app-css-length-form>
+            </accordion>
+            <accordion>
+                <div class="prop-category treeview-item">
+                    <div class="prop-category-header treeview-item-header" #Header>
+                        <a>Sizes</a>
                     </div>
-                    <div class="prop-item">
-                        <label>
-                            Height
-                        </label>
-                        <app-css-length-form style="width: 120px;"></app-css-length-form>
+                    <div class="prop-category-content treeview-item-content" #Content>
+                        <div class="prop-item">
+                            <label>
+                                Width
+                            </label>
+                            <app-css-length-form style="width: 120px;"></app-css-length-form>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Height
+                            </label>
+                            <app-css-length-form style="width: 120px;"></app-css-length-form>
 
-                    </div>
-                    <div class="prop-item">
-                        <label>
-                            Min Width
-                        </label>
-                        <app-css-length-form style="width: 120px;"></app-css-length-form>
-                    </div>
-                    <div class="prop-item">
-                        <label>
-                            Min Height
-                        </label>
-                        <app-css-length-form style="width: 120px;"></app-css-length-form>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Min Width
+                            </label>
+                            <app-css-length-form style="width: 120px;"></app-css-length-form>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Min Height
+                            </label>
+                            <app-css-length-form style="width: 120px;"></app-css-length-form>
 
-                    </div>
-                    <div class="prop-item">
-                        <label>
-                            Resiable
-                        </label>
-                        <input type="checkbox" value="Text">
-                    </div>
-                </div>
-            </div>
-            <div class="prop-category treeview-item">
-                <div class="prop-category-header treeview-item-header">
-                    <a>Apprearance</a>
-                </div>
-                <div class="prop-category-content treeview-item-content">
-                    <div class="prop-item">
-                        <label>
-                            Visible
-                        </label>
-                        <input type="checkbox" value="Text">
-                    </div>
-                    <div class="prop-item">
-                        <label>
-                            Display
-                        </label>
-                        <select>
-                            <option>Bloc</option>
-                            <option>Inline block</option>
-                            <option>Flex</option>
-                            <option>Inline Flex</option>
-                            <option>None</option>
-                        </select>
-                    </div>
-
-                    <div class="prop-item">
-                        <label>
-                            Opacity
-                        </label>
-                        <input type="range" value="1">
-                    </div>
-                    <div class="prop-item">
-                        <label>
-                            Z-index
-                        </label>
-                        <input type="number" value="1">
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Resiable
+                            </label>
+                            <input type="checkbox" value="Text">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="prop-category treeview-item">
-                <div class="prop-category-header treeview-item-header">
-                    <a>Positionment</a>
-                </div>
-                <div class="prop-category-content treeview-item-content">
-                    <div class="prop-item">
-                        <label>
-                            Position
-                        </label>
-                        <select>
-                            <option>Relative</option>
-                            <option>Absolute</option>
-                            <option>Static</option>
-                            <option>Fixed</option>
-                        </select>
+            </accordion>
+            <accordion>
+                <div class="prop-category treeview-item">
+                    <div class="prop-category-header treeview-item-header" #Header>
+                        <a>Apprearance</a>
                     </div>
-                    <div class="prop-item">
-                        <label>
-                            Height
-                        </label>
-                        <app-css-length-form style="width: 120px;"></app-css-length-form>
-
-                    </div>
-                    <div class="prop-item">
-                        <label>
-                            Min Width
-                        </label>
-                        <app-css-length-form style="width: 120px;"></app-css-length-form>
-                    </div>
-                    <div class="prop-item">
-                        <label>
-                            Min Height
-                        </label>
-                        <app-css-length-form style="width: 120px;"></app-css-length-form>
-
-                    </div>
-                    <div class="prop-item">
-                        <label>
-                            Resiable
-                        </label>
-                        <input type="checkbox" value="Text">
-                    </div>
-                </div>
-            </div>
-            <div class="prop-category treeview-item">
-                <div class="prop-category-header treeview-item-header">
-                    <a>Typography</a>
-                </div>
-                <div class="prop-category-content treeview-item-content">
-                    <div class="prop-item">
-                        <label>
-                            Longeur
-                        </label>
-                        <div class="selectunit">
-                            <input type="number">
+                    <div class="prop-category-content treeview-item-content" #Content>
+                        <div class="prop-item">
+                            <label>
+                                Visibility
+                            </label>
                             <select>
-                                <option value="px">px</option>
-                                <option value="pm">em</option>
+                                <optgroup label="values">
+                                    <option>visible</option>
+                                    <option>hidden</option>
+                                    <option>collapse</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>revert-layer</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Display
+                            </label>
+                            <select>
+                                <option>Bloc</option>
+                                <option>Inline block</option>
+                                <option>Flex</option>
+                                <option>Inline Flex</option>
+                                <option>None</option>
+                            </select>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Z-index
+                            </label>
+                            <input type="number" value="1">
+                        </div>
+                    </div>
+                </div>
+            </accordion>
+            <accordion>
+                <div class="prop-category treeview-item">
+                    <div class="prop-category-header treeview-item-header" #Header>
+                        <a>Positionment</a>
+                    </div>
+                    <div class="prop-category-content treeview-item-content" #Content>
+                        <div class="prop-item">
+                            <label>
+                                Position
+                            </label>
+                            <select>
+                                <option>Relative</option>
+                                <option>Absolute</option>
+                                <option>Static</option>
+                                <option>Fixed</option>
+                            </select>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Height
+                            </label>
+                            <app-css-length-form style="width: 120px;"></app-css-length-form>
+
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Min Width
+                            </label>
+                            <app-css-length-form style="width: 120px;"></app-css-length-form>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Min Height
+                            </label>
+                            <app-css-length-form style="width: 120px;"></app-css-length-form>
+
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Resiable
+                            </label>
+                            <input type="checkbox" value="Text">
+                        </div>
+                    </div>
+                </div>
+            </accordion>
+            <!--Typography-->
+            <accordion>
+                <div class="prop-category treeview-item">
+                    <div class="prop-category-header treeview-item-header" #Header>
+                        <a>Typography</a>
+                    </div>
+                    <div class="prop-category-content treeview-item-content" #Content>
+
+                        <!--
+                    <div class="prop-item"><label> @font-face </label><select>
+                        <optgroup label="Values"></optgroup>
+                            <optgroup label="Globals">
+                                <option>inherit</option>
+                                <option>initial</option>
+                                <option>revert</option>
+                                <option>unset</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    -->
+                        <div class="prop-item"><label> font-family </label><select>
+                                <optgroup label="System">
+                                    <option *ngFor="let font of fonts.system">{{font}}</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> font-size </label>
+                            <app-css-length-form></app-css-length-form>
+                        </div>
+                        <div class="prop-item"><label> font-size-adjust </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> font-stretch </label>
+                            <app-css-length-form></app-css-length-form>
+                        </div>
+                        <div class="prop-item"><label> font-style </label><select>
+                                <optgroup label="Values">
+                                    <option>normal</option>
+                                    <option>italic</option>
+                                    <option>oblique</option>
+                                    <option>oblique 10deg</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> font-variant </label><select>
+                                <optgroup label="Values">
+                                    <option>small-caps</option>
+                                    <option>common-ligatures small-caps</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>revert-layer</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> font-weight </label><select>
+                                <optgroup label="Values">
+                                    <option>normal</option>
+                                    <option>bold</option>
+                                </optgroup>
+                                <optgroup label="relative ">
+                                    <option>lighter</option>
+                                    <option>bolder</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>revert-layer</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> text-align </label><select>
+                                <optgroup label="Values">
+                                    <option>left</option>
+                                    <option>end</option>
+                                    <option>right</option>
+                                    <option>center</option>
+                                    <option>justify</option>
+                                    <option>justify-all</option>
+                                    <option>match-parent</option>
+                                </optgroup>
+                                <optgroup label="Block alignment ">
+                                    <option>-moz-center</option>
+                                    <option>-webkit-center</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>revert-layer</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> text-align-last </label><select>
+                                <optgroup label="Values">
+                                    <option> auto</option>
+                                    <option> start</option>
+                                    <option> end</option>
+                                    <option> left</option>
+                                    <option> right</option>
+                                    <option> center</option>
+                                    <option> justify</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> text-decoration </label><select>
+                                <optgroup label="Values">
+                                    <option> underline</option>
+                                    <option> overline red</option>
+                                    <option> none</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>revert-layer</option>
+
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> text-decoration-color </label>
+                            <input type="color">
+                        </div>
+                        <div class="prop-item"><label> text-decoration-line </label><select>
+                                <optgroup label="Values">
+                                    <option> none</option>
+                                    <option> underline</option>
+                                    <option> overline</option>
+                                    <option> line-through</option>
+                                    <option> blink</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>revert-layer</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> text-decoration-style </label><select>
+                                <optgroup label="Values">
+                                    <option>solid</option>
+                                    <option>double</option>
+                                    <option>dotted</option>
+                                    <option>dashed</option>
+                                    <option>wavy</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>revert-layer</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> text-indent </label>
+                            <app-css-length-form></app-css-length-form>
+                        </div>
+                        <div class="prop-item"><label> text-justify </label><select>
+                                <optgroup label="Values">
+                                    <option>none</option>
+                                    <option>auto</option>
+                                    <option>inter-word</option>
+                                    <option>inter-character</option>
+                                    <option>distribute</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>revert-layer</option>
+
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> text-overflow </label><select>
+                                <optgroup label="Values">
+                                    <option> clip</option>
+                                    <option> ellipsis ellipsis</option>
+                                    <option> ellipsis " [..]"</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>revert-layer</option>
+
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> text-shadow </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>revert-layer</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> text-transform </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item">
+                            <label> color </label>
+                            <input type="color">
+                        </div>
+                        <div class="prop-item"><label> white-space </label><select>
+                                <optgroup label="Values">
+                                    <option>normal</option>
+                                    <option>nowrap</option>
+                                    <option>pre</option>
+                                    <option>pre-wrap</option>
+                                    <option>pre-line</option>
+                                    <option>break-spaces</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> word-break </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> word-spacing </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> word-wrap </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> letter-spacing </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> hanging-punctuation </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> line-height </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> tab-size </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> direction </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> unicode-bidi </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> content </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> counter-increment </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> counter-reset </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="prop-item"><label> quotes </label><select>
+                                <optgroup label="Values"></optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select></div>
+                    </div>
+                </div>
+            </accordion>
+            <!--Background-->
+            <accordion>
+                <div class="prop-category treeview-item">
+                    <div class="prop-category-header treeview-item-header" #Header>
+                        <a>Background</a>
+                    </div>
+                    <div class="prop-category-content treeview-item-content" #Content>
+                        <div class="prop-item">
+                            <label>
+                                size
+                            </label>
+                            <app-css-length-form style="width: 120px;"></app-css-length-form>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Color
+                            </label>
+                            <input type="color">
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Opacity
+                            </label>
+                            <input type="range">
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                image
+                            </label>
+                            <input type="file">
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Repeat
+                            </label>
+                            <select>
+                                <optgroup label="values">
+                                    <option>No-repeat</option>
+                                    <option>Repeat</option>
+                                    <option>Repeat-x</option>
+                                    <option>Repeat-y</option>
+                                    <option>Space</option>
+                                    <option>Round</option>
+                                </optgroup>
+                                <optgroup label="Vertical / horizontal">
+                                    <option>repeat space</option>
+                                    <option>repeat repeat</option>
+                                    <option>round space</option>
+                                    <option>no-repeat round</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Attachment
+                            </label>
+                            <select>
+                                <optgroup label="values">
+                                    <option>Fixed</option>
+                                    <option>Scroll</option>
+                                    <option>Local</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Position
+                            </label>
+                            <select>
+                                <optgroup label="values">
+                                    <option>Top</option>
+                                    <option>Bottom</option>
+                                    <option>Left</option>
+                                    <option>Right</option>
+                                    <option>Center</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Origin
+                            </label>
+                            <select>
+                                <optgroup label="values">
+                                    <option>border-box</option>
+                                    <option>padding-box</option>
+                                    <option>content-box</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Clip
+                            </label>
+                            <select>
+                                <optgroup label="values">
+                                    <option>border-box</option>
+                                    <option>padding-box</option>
+                                    <option>content-box</option>
+                                    <option>text</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>revert-layer</option>
+                                    <option>unset</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Blend mode
+                            </label>
+                            <select>
+                                <optgroup label="values">
+                                    <option>normal</option>
+                                    <option>multiply</option>
+                                    <option>screen</option>
+                                    <option>overlay</option>
+                                    <option>darken</option>
+                                    <option>lighten</option>
+                                    <option>color-dodge</option>
+                                    <option>color-burn</option>
+                                    <option>hard-light</option>
+                                    <option>soft-light</option>
+                                    <option>difference</option>
+                                    <option>exclusion</option>
+                                    <option>hue</option>
+                                    <option>saturation</option>
+                                    <option>color</option>
+                                    <option>luminosity</option>
+                                </optgroup>
+                                <optgroup label="Globals">
+                                    <option>inherit</option>
+                                    <option>initial</option>
+                                    <option>revert</option>
+                                    <option>revert-layer</option>
+                                    <option>unset</option>
+                                </optgroup>
                             </select>
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </accordion>
+            <!--Border-->
+            <accordion>
+                <div class="prop-category treeview-item">
+                    <div class="prop-category-header treeview-item-header" #Header>
+                        <a>Border</a>
+                    </div>
+                    <div class="prop-category-content treeview-item-content" #Content>
+                        <div class="prop-item">
+                            <label>
+                                style
+                            </label>
+                            <select>
+                                <option>Solid</option>
+                                <option>Dotted</option>
+                                <option>Dashed</option>
+                            </select>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                size
+                            </label>
+                            <app-css-length-form style="width: 120px;"></app-css-length-form>
+                        </div>
+                        <div class="prop-item">
+                            <label>
+                                Color
+                            </label>
+                            <input type="color">
+                        </div>
+                    </div>
+                </div>
+            </accordion>
         </div>
-
     </scrollbar>
-
 </div>

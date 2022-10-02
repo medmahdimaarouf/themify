@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CssFontsService } from 'src/app/common/services/css-fonts.service/css-fonts.service';
+
 
 @Component({
   selector: 'app-inspector',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inspector.component.scss']
 })
 export class InspectorComponent implements OnInit {
-
-  constructor() { }
+  fonts: { system: Array<string> } = { system: [] }
+  constructor(private cssFontsService: CssFontsService) { }
 
   ngOnInit(): void {
+    this.fonts = this.cssFontsService.fonts;
   }
 
 }
